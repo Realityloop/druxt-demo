@@ -1,7 +1,17 @@
 import Vue from 'vue'
+import DruxtFieldBasicString from './DruxtFieldBasicString'
+import DruxtFieldDatetimeDefault from './DruxtFieldDatetimeDefault'
+import DruxtFieldLink from './DruxtFieldLink'
 import DruxtFieldListDefault from './DruxtFieldListDefault'
+import DruxtFieldTimestamp from './DruxtFieldTimestamp'
 
-const components = [DruxtFieldListDefault]
+const components = [
+  DruxtFieldBasicString,
+  DruxtFieldDatetimeDefault,
+  DruxtFieldLink,
+  DruxtFieldListDefault,
+  DruxtFieldTimestamp,
+]
 
 // Component registration
 Vue.use({
