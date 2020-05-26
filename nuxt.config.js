@@ -43,6 +43,8 @@ export default {
     'druxt-schema'
   ],
 
+  plugins: ['~/components'],
+
   /**
    * Druxt; DRUpal <-> nuXT.
    */
