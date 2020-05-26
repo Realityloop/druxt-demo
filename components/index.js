@@ -1,8 +1,10 @@
 import Vue from 'vue'
+
 import DruxtFieldBasicString from './DruxtFieldBasicString'
 import DruxtFieldDatetimeDefault from './DruxtFieldDatetimeDefault'
 import DruxtFieldLink from './DruxtFieldLink'
 import DruxtFieldListDefault from './DruxtFieldListDefault'
+import DruxtFieldTextDefault from './DruxtFieldTextDefault'
 import DruxtFieldTimestamp from './DruxtFieldTimestamp'
 
 const components = [
@@ -10,6 +12,7 @@ const components = [
   DruxtFieldDatetimeDefault,
   DruxtFieldLink,
   DruxtFieldListDefault,
+  DruxtFieldTextDefault,
   DruxtFieldTimestamp,
 ]
 
