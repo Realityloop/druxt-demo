@@ -50,15 +50,17 @@ export default {
    */
   druxt: {
     baseUrl: process.env.API_URL,
-    auth: {
-      type: 'oauth2',
-      credentials: {
-        clientId: process.env.API_CONSUMER_CLIENT_ID,
-        clientSecret: process.env.API_CONSUMER_CLIENT_SECRET,
-        username: process.env.API_CONSUMER_USERNAME,
-        password: process.env.API_CONSUMER_PASSWORD
-      }
-    },
+    // Uncomment the lines below to enable the use of Oauth2 credentials via the .env file.
+    //
+    // auth: {
+    //   type: 'oauth2',
+    //   credentials: {
+    //     clientId: process.env.API_CONSUMER_CLIENT_ID,
+    //     clientSecret: process.env.API_CONSUMER_CLIENT_SECRET,
+    //     username: process.env.API_CONSUMER_USERNAME,
+    //     password: process.env.API_CONSUMER_PASSWORD
+    //   }
+    // },
     router: {
       render: 'druxt-entity'
     }

@@ -1,6 +1,6 @@
 {
   "name": "druxt-demo",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Druxt demo site",
   "author": "Stuart Clark",
   "private": true,
@@ -17,7 +17,7 @@
     "@nuxtjs/pwa": "^3.0.0-beta.20",
     "bootstrap-vue": "^2.9.0",
     "druxt-breadcrumb": "^0.2.0",
-    "druxt-entity": "^0.1.0",
+    "druxt-entity": "^0.2.0",
     "druxt-menu": "^0.1.1",
     "druxt-router": "^0.10.0",
     "druxt-schema": "^0.2.0",
