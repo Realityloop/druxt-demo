@@ -9,7 +9,7 @@
       <b-col cols="3">
         <druxt-menu component="b-nav" :depth="2">
           <template #item="{ item: { entity } }">
-            <b-nav-item :to="entity.attributes.url">
+            <b-nav-item :to="`/${entity.attributes.link.uri.substr(7)}`">
               {{ entity.attributes.title }}
             </b-nav-item>
           </template>
