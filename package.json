@@ -19,7 +19,7 @@
     "druxt-breadcrumb": "^0.3.2",
     "druxt-entity": "^0.2.2",
     "druxt-menu": "^0.1.1",
-    "druxt-router": "^0.10.0",
+    "druxt-router": "^0.10.1",
     "druxt-schema": "^0.2.0",
     "nuxt": "^2.12.1"
   },
