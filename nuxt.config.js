@@ -40,14 +40,15 @@ export default {
     'druxt-entity',
     'druxt-menu',
     'druxt-router',
-    'druxt-schema'
+    'druxt-schema',
+    'druxt-views'
   ],
 
   /**
    * Druxt; DRUpal <-> nuXT.
    */
   druxt: {
-    baseUrl: process.env.API_URL,
+    baseUrl: process.env.API_URL
     // Uncomment the lines below to enable the use of Oauth2 credentials via the .env file.
     //
     // auth: {
@@ -58,10 +59,7 @@ export default {
     //     username: process.env.API_CONSUMER_USERNAME,
     //     password: process.env.API_CONSUMER_PASSWORD
     //   }
-    // },
-    router: {
-      render: 'druxt-entity'
-    }
+    // }
   },
 
   /**
