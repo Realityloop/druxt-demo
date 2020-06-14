@@ -34,13 +34,13 @@
       </b-col>
     </b-row>
 
-    <b-row>
+    <b-row v-if="isHomePath">
       <b-col>
         <druxt-breadcrumb component="b-breadcrumb" />
       </b-col>
     </b-row>
 
-    <b-row v-if="!$store.state.druxtRouter.route.isHomePath">
+    <b-row v-if="isHomePath">
       <b-col>
         <h1>{{ $store.state.druxtRouter.route.label }}</h1>
       </b-col>
@@ -57,6 +57,12 @@
 <script>
 export default {
   name: 'Druxt',
+
+  computed: {
+    isHomePath() {
+      return !this.$store.state.druxtRouter.route.isHomePath
+    },
+  },
 }
 </script>
 
