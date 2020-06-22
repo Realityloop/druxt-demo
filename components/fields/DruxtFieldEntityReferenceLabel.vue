@@ -1,5 +1,17 @@
 <template>
-  <div v-if="entities && typeof entities[0] !== 'undefined'">
+  <component
+    :is="wrapperElement"
+    v-if="entities && typeof entities[0] !== 'undefined'"
+  >
+    <!-- Label: Above -->
+    <div v-if="$slots['label-above']">
+      <slot name="label-above" />
+    </div>
+
+    <!-- Label: Inline -->
+    <slot v-if="$slots['label-inline']" name="label-inline" />
+
+    <!-- Items -->
     <component
       class="mr-1"
       :is="component"
@@ -9,7 +21,7 @@
     >
       <b-badge pill>{{ entity.text }}</b-badge>
     </component>
-  </div>
+  </component>
 </template>
 
 <script>

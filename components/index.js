@@ -5,7 +5,9 @@ import DruxtEntityCardCommon from './entities/DruxtEntityCardCommon.vue'
 import DruxtEntityNodeRecipeDefault from './entities/DruxtEntityNodeRecipeDefault.vue'
 
 import DruxtFieldEntityReferenceLabel from './fields/DruxtFieldEntityReferenceLabel.vue'
+import DruxtFieldListDefaultFieldDifficulty from './fields/DruxtFieldListDefaultFieldDifficulty.vue'
 import DruxtFieldResponsiveImage from './fields/DruxtFieldResponsiveImage.vue'
+import DruxtFieldResponsiveImageFieldMediaImage from './fields/DruxtFieldResponsiveImageFieldMediaImage.vue'
 import DruxtFieldStringFieldIngredients from './fields/DruxtFieldStringFieldIngredients.vue'
 
 import DruxtViewFeaturedArticlesPage1 from './views/DruxtViewFeaturedArticlesPage1.vue'
@@ -18,7 +20,9 @@ const components = [
   DruxtEntityNodeRecipeDefault,
 
   DruxtFieldEntityReferenceLabel,
+  DruxtFieldListDefaultFieldDifficulty,
   DruxtFieldResponsiveImage,
+  DruxtFieldResponsiveImageFieldMediaImage,
   DruxtFieldStringFieldIngredients,
 
   DruxtViewFeaturedArticlesPage1,
