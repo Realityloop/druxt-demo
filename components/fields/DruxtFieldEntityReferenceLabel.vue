@@ -1,6 +1,6 @@
 <template>
   <component
-    :is="wrapperElement"
+    :is="wrapper.component"
     v-if="entities && typeof entities[0] !== 'undefined'"
   >
     <!-- Label: Above -->

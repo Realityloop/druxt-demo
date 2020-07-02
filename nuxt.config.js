@@ -36,6 +36,7 @@ export default {
     // https://github.com/nuxt-community/proxy-module
     '@nuxtjs/proxy',
     'bootstrap-vue/nuxt',
+    'druxt-blocks',
     'druxt-breadcrumb',
     'druxt-entity',
     'druxt-menu',

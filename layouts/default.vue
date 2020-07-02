@@ -1,54 +1,38 @@
 <template>
-  <b-container>
+  <b-container fluid>
+    <!-- Header -->
     <b-row>
       <b-col>
-        <b-navbar toggleable="lg">
-          <b-navbar-brand to="/">
-            @TODO - Title
-          </b-navbar-brand>
-
-          <b-navbar-toggle target="nav-collapse" />
-
-          <b-collapse id="nav-collapse" is-nav>
-            <druxt-menu component="b-navbar-nav" class="ml-auto">
-              <template #item="{ item: { entity }, to }">
-                <b-nav-item :to="to">
-                  {{ entity.attributes.title }}
-                </b-nav-item>
-              </template>
-
-              <template #parent="{ item: { entity, children }}">
-                <b-nav-item-dropdown :text="entity.attributes.title">
-                  <druxt-menu-item :item="{ entity, children: [] }" />
-
-                  <druxt-menu-item
-                    v-for="item in children"
-                    :key="item.entity.id"
-                    :item="item"
-                  />
-                </b-nav-item-dropdown>
-              </template>
-            </druxt-menu>
-          </b-collapse>
-        </b-navbar>
+        <b-container :class="containerClass">
+          <druxt-block-region name="header" :theme="theme" />
+        </b-container>
       </b-col>
     </b-row>
 
+    <!-- Breadcrumbs -->
     <b-row v-if="isHomePath">
       <b-col>
-        <druxt-breadcrumb component="b-breadcrumb" />
+        <b-container :class="containerClass">
+          <druxt-block-region name="breadcrumbs" :theme="theme" />
+        </b-container>
       </b-col>
     </b-row>
 
+    <!-- Page title -->
     <b-row v-if="isHomePath">
       <b-col>
-        <h1>{{ $store.state.druxtRouter.route.label }}</h1>
+        <b-container :class="containerClass">
+          <h1>{{ $store.state.druxtRouter.route.label }}</h1>
+        </b-container>
       </b-col>
     </b-row>
 
-    <b-row>
+    <!-- Content -->
+    <b-row class="bg-light">
       <b-col>
-        <nuxt />
+        <b-container :class="containerClass">
+          <druxt-block-region :theme="theme" />
+        </b-container>
       </b-col>
     </b-row>
   </b-container>
@@ -59,9 +43,12 @@ export default {
   name: 'Druxt',
 
   computed: {
+    containerClass: () => ['p-3'],
     isHomePath() {
       return !this.$store.state.druxtRouter.route.isHomePath
     },
+
+    theme: () => 'umami',
   },
 }
 </script>

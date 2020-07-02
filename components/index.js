@@ -1,5 +1,10 @@
 import Vue from 'vue'
 
+import DruxtBlockRegionHeader from './block-regions/DruxtBlockRegionHeader.vue'
+
+import DruxtBlockSystemBrandingBlock from './blocks/DruxtBlockSystemBrandingBlock.vue'
+import DruxtBlockSystemMenuBlockMain from './blocks/DruxtBlockSystemMenuBlockMain.vue'
+
 import DruxtEntityCard from './entities/DruxtEntityCard.vue'
 import DruxtEntityCardCommon from './entities/DruxtEntityCardCommon.vue'
 import DruxtEntityNodeRecipeDefault from './entities/DruxtEntityNodeRecipeDefault.vue'
@@ -15,6 +20,11 @@ import DruxtViewFrontpagePage1 from './views/DruxtViewFrontpagePage1.vue'
 import DruxtViewRecipesPage1 from './views/DruxtViewRecipesPage1.vue'
 
 const components = [
+  DruxtBlockRegionHeader,
+
+  DruxtBlockSystemBrandingBlock,
+  DruxtBlockSystemMenuBlockMain,
+
   DruxtEntityCard,
   DruxtEntityCardCommon,
   DruxtEntityNodeRecipeDefault,
