@@ -1,13 +1,9 @@
 <template>
   <b-container fluid>
     <!-- Header -->
-    <b-row>
-      <b-col>
-        <b-container :class="containerClass">
-          <druxt-block-region name="header" :theme="theme" />
-        </b-container>
-      </b-col>
-    </b-row>
+    <b-navbar class="bg-white p-3" toggleable="lg" sticky>
+      <druxt-block-region name="header" :theme="theme" />
+    </b-navbar>
 
     <!-- Breadcrumbs -->
     <b-row v-if="isHomePath">
@@ -39,16 +35,20 @@
     <!-- Footer -->
     <b-row class="bg-dark text-white">
       <b-col>
-        <b-container :class="containerClass">
+        <b-container
+          :class="containerClass.concat(['text-center', 'text-md-left'])"
+        >
           <druxt-block-region name="footer" :theme="theme" />
         </b-container>
       </b-col>
     </b-row>
 
-    <!-- Footer -->
+    <!-- Bottom -->
     <b-row>
       <b-col>
-        <b-container :class="containerClass">
+        <b-container
+          :class="containerClass.concat(['text-center', 'text-md-left'])"
+        >
           <druxt-block-region name="bottom" :theme="theme" />
         </b-container>
       </b-col>
@@ -61,7 +61,8 @@ export default {
   name: 'Druxt',
 
   computed: {
-    containerClass: () => ['p-3'],
+    containerClass: () => ['p-3', 'p-md-5'],
+
     isHomePath() {
       return !this.$store.state.druxtRouter.route.isHomePath
     },
@@ -91,32 +92,7 @@ html {
   margin: 0;
 }
 
-.button--green {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
-  text-decoration: none;
-  padding: 10px 30px;
-}
-
-.button--green:hover {
-  color: #fff;
-  background-color: #3b8070;
-}
-
-.button--grey {
-  display: inline-block;
-  border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
-  text-decoration: none;
-  padding: 10px 30px;
-  margin-left: 15px;
-}
-
-.button--grey:hover {
-  color: #fff;
-  background-color: #35495e;
+.sticky-top {
+  margin: 0 -15px;
 }
 </style>

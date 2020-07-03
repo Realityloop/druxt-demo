@@ -1,9 +1,9 @@
 <template>
-  <b-navbar toggleable="lg">
+  <b-container>
     <slot />
 
     <b-navbar-toggle target="nav-collapse" />
-  </b-navbar>
+  </b-container>
 </template>
 
 <script>
