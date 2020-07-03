@@ -5,6 +5,8 @@ import DruxtBlockRegionHeader from './block-regions/DruxtBlockRegionHeader.vue'
 import DruxtBlockSystemBrandingBlock from './blocks/DruxtBlockSystemBrandingBlock.vue'
 import DruxtBlockSystemMenuBlockMain from './blocks/DruxtBlockSystemMenuBlockMain.vue'
 
+import DruxtEntityBlockContentDisclaimerBlock from './entities/DruxtEntityBlockContentDisclaimerBlock.vue'
+import DruxtEntityBlockContentFooterPromoBlock from './entities/DruxtEntityBlockContentFooterPromoBlock.vue'
 import DruxtEntityCard from './entities/DruxtEntityCard.vue'
 import DruxtEntityCardCommon from './entities/DruxtEntityCardCommon.vue'
 import DruxtEntityNodeRecipeDefault from './entities/DruxtEntityNodeRecipeDefault.vue'
@@ -25,6 +27,8 @@ const components = [
   DruxtBlockSystemBrandingBlock,
   DruxtBlockSystemMenuBlockMain,
 
+  DruxtEntityBlockContentDisclaimerBlock,
+  DruxtEntityBlockContentFooterPromoBlock,
   DruxtEntityCard,
   DruxtEntityCardCommon,
   DruxtEntityNodeRecipeDefault,

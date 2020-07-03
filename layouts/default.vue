@@ -35,6 +35,24 @@
         </b-container>
       </b-col>
     </b-row>
+
+    <!-- Footer -->
+    <b-row class="bg-dark text-white">
+      <b-col>
+        <b-container :class="containerClass">
+          <druxt-block-region name="footer" :theme="theme" />
+        </b-container>
+      </b-col>
+    </b-row>
+
+    <!-- Footer -->
+    <b-row>
+      <b-col>
+        <b-container :class="containerClass">
+          <druxt-block-region name="bottom" :theme="theme" />
+        </b-container>
+      </b-col>
+    </b-row>
   </b-container>
 </template>
 
