@@ -27,8 +27,9 @@ export default {
       component: 'b-col',
       props: {
         class: 'mb-3',
-        cols: 6,
+        cols: 12,
         lg: 3,
+        sm: 6,
       },
     }),
   },
