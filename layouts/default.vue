@@ -5,53 +5,48 @@
       <druxt-block-region name="header" :theme="theme" />
     </b-navbar>
 
-    <!-- Breadcrumbs -->
-    <b-row v-if="isHomePath">
-      <b-col>
-        <b-container :class="containerClass">
-          <druxt-block-region name="breadcrumbs" :theme="theme" />
-        </b-container>
-      </b-col>
-    </b-row>
-
-    <!-- Page title -->
-    <b-row v-if="isHomePath">
-      <b-col>
-        <b-container :class="containerClass">
-          <h1>{{ $store.state.druxtRouter.route.label }}</h1>
-        </b-container>
-      </b-col>
-    </b-row>
+    <!-- Banner: Top -->
+    <druxt-block-region name="banner_top" :theme="theme" />
 
     <!-- Content -->
     <b-row class="bg-light">
-      <b-col>
-        <b-container :class="containerClass">
-          <druxt-block-region :theme="theme" />
-        </b-container>
-      </b-col>
+      <b-container :class="containerClass">
+        <!-- Page title -->
+        <b-row v-if="!isHomePath">
+          <b-col class="mb-3 mb-md-5">
+            <h1>{{ $store.state.druxtRouter.route.label }}</h1>
+          </b-col>
+        </b-row>
+
+        <druxt-block-region :theme="theme" />
+      </b-container>
+    </b-row>
+
+    <!-- Content: Bottom -->
+    <b-row class="bg-secondary text-white">
+      <b-container
+        :class="containerClass.concat(['text-center', 'text-md-left'])"
+      >
+        <druxt-block-region name="content_bottom" :theme="theme" />
+      </b-container>
     </b-row>
 
     <!-- Footer -->
     <b-row class="bg-dark text-white">
-      <b-col>
-        <b-container
-          :class="containerClass.concat(['text-center', 'text-md-left'])"
-        >
-          <druxt-block-region name="footer" :theme="theme" />
-        </b-container>
-      </b-col>
+      <b-container
+        :class="containerClass.concat(['text-center', 'text-md-left'])"
+      >
+        <druxt-block-region name="footer" :theme="theme" />
+      </b-container>
     </b-row>
 
     <!-- Bottom -->
     <b-row>
-      <b-col>
-        <b-container
-          :class="containerClass.concat(['text-center', 'text-md-left'])"
-        >
-          <druxt-block-region name="bottom" :theme="theme" />
-        </b-container>
-      </b-col>
+      <b-container
+        :class="containerClass.concat(['text-center', 'text-md-left'])"
+      >
+        <druxt-block-region name="bottom" :theme="theme" />
+      </b-container>
     </b-row>
   </b-container>
 </template>
@@ -61,10 +56,10 @@ export default {
   name: 'Druxt',
 
   computed: {
-    containerClass: () => ['p-3', 'p-md-5'],
+    containerClass: () => ['mb-3', 'mt-3', 'mb-md-5', 'mt-md-5'],
 
     isHomePath() {
-      return !this.$store.state.druxtRouter.route.isHomePath
+      return !!this.$store.state.druxtRouter.route.isHomePath
     },
 
     theme: () => 'umami',
