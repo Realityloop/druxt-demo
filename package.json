@@ -9,7 +9,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore ."
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "postinstall": "patch-package"
   },
   "dependencies": {
     "@nuxtjs/dotenv": "^1.4.1",
@@ -23,7 +24,9 @@
     "druxt-router": "^0.14.0",
     "druxt-schema": "^0.3.0",
     "druxt-views": "^0.3.0",
-    "nuxt": "^2.12.1"
+    "get-port-please": "^1.0.0",
+    "nuxt": "^2.12.1",
+    "patch-package": "^6.2.2"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^2.0.2",
