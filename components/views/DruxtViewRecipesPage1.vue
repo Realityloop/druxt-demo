@@ -15,8 +15,12 @@
 </template>
 
 <script>
+import { DruxtViewsViewMixin } from 'druxt-views'
+
 export default {
   name: 'DruxtViewRecipesPage1',
+
+  mixins: [DruxtViewsViewMixin],
 
   computed: {
     wrapper: () => ({

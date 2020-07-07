@@ -5,6 +5,7 @@ import DruxtBlockRegionHeader from './block-regions/DruxtBlockRegionHeader.vue'
 import DruxtBlockSystemBrandingBlock from './blocks/DruxtBlockSystemBrandingBlock.vue'
 import DruxtBlockSystemMenuBlockMain from './blocks/DruxtBlockSystemMenuBlockMain.vue'
 
+import DruxtEntityBlockContentBannerBlock from './entities/DruxtEntityBlockContentBannerBlock.vue'
 import DruxtEntityBlockContentDisclaimerBlock from './entities/DruxtEntityBlockContentDisclaimerBlock.vue'
 import DruxtEntityBlockContentFooterPromoBlock from './entities/DruxtEntityBlockContentFooterPromoBlock.vue'
 import DruxtEntityCard from './entities/DruxtEntityCard.vue'
@@ -12,6 +13,7 @@ import DruxtEntityCardCommon from './entities/DruxtEntityCardCommon.vue'
 import DruxtEntityNodeRecipeDefault from './entities/DruxtEntityNodeRecipeDefault.vue'
 
 import DruxtFieldEntityReferenceLabel from './fields/DruxtFieldEntityReferenceLabel.vue'
+import DruxtFieldLink from './fields/DruxtFieldLink.vue'
 import DruxtFieldListDefaultFieldDifficulty from './fields/DruxtFieldListDefaultFieldDifficulty.vue'
 import DruxtFieldResponsiveImage from './fields/DruxtFieldResponsiveImage.vue'
 import DruxtFieldResponsiveImageFieldMediaImage from './fields/DruxtFieldResponsiveImageFieldMediaImage.vue'
@@ -19,6 +21,8 @@ import DruxtFieldStringFieldIngredients from './fields/DruxtFieldStringFieldIngr
 
 import DruxtViewFeaturedArticlesPage1 from './views/DruxtViewFeaturedArticlesPage1.vue'
 import DruxtViewFrontpagePage1 from './views/DruxtViewFrontpagePage1.vue'
+import DruxtViewPromotedItemsBlock1 from './views/DruxtViewPromotedItemsBlock1.vue'
+import DruxtViewRecipeCollectionsBlock from './views/DruxtViewRecipeCollectionsBlock.vue'
 import DruxtViewRecipesPage1 from './views/DruxtViewRecipesPage1.vue'
 
 const components = [
@@ -27,6 +31,7 @@ const components = [
   DruxtBlockSystemBrandingBlock,
   DruxtBlockSystemMenuBlockMain,
 
+  DruxtEntityBlockContentBannerBlock,
   DruxtEntityBlockContentDisclaimerBlock,
   DruxtEntityBlockContentFooterPromoBlock,
   DruxtEntityCard,
@@ -34,6 +39,7 @@ const components = [
   DruxtEntityNodeRecipeDefault,
 
   DruxtFieldEntityReferenceLabel,
+  DruxtFieldLink,
   DruxtFieldListDefaultFieldDifficulty,
   DruxtFieldResponsiveImage,
   DruxtFieldResponsiveImageFieldMediaImage,
@@ -41,6 +47,8 @@ const components = [
 
   DruxtViewFeaturedArticlesPage1,
   DruxtViewFrontpagePage1,
+  DruxtViewPromotedItemsBlock1,
+  DruxtViewRecipeCollectionsBlock,
   DruxtViewRecipesPage1,
 ]
 
