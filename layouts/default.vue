@@ -11,6 +11,13 @@
     <!-- Content -->
     <b-row class="bg-light">
       <b-container :class="containerClass">
+        <!-- Breadcrumb -->
+        <b-row v-if="!isHomePath">
+          <b-col class="mb-3 mb-md-5">
+            <druxt-block-region name="breadcrumbs" :theme="theme" />
+          </b-col>
+        </b-row>
+
         <!-- Page title -->
         <b-row v-if="!isHomePath">
           <b-col class="mb-3 mb-md-5">
