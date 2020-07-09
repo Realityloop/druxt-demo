@@ -13,7 +13,7 @@
       <b-container :class="containerClass">
         <!-- Breadcrumb -->
         <b-row v-if="!isHomePath">
-          <b-col class="mb-3 mb-md-5">
+          <b-col>
             <druxt-block-region name="breadcrumbs" :theme="theme" />
           </b-col>
         </b-row>
@@ -21,7 +21,7 @@
         <!-- Page title -->
         <b-row v-if="!isHomePath">
           <b-col class="mb-3 mb-md-5">
-            <h1>{{ $store.state.druxtRouter.route.label }}</h1>
+            <druxt-block-region name="page_title" :theme="theme" />
           </b-col>
         </b-row>
 
