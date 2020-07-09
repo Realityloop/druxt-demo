@@ -54,7 +54,11 @@ export default {
    * Druxt; DRUpal <-> nuXT.
    */
   druxt: {
-    baseUrl: process.env.API_URL
+    baseUrl: process.env.API_URL,
+    breadcrumb: {
+      component: 'b-breadcrumb',
+      home: false
+    }
     // Uncomment the lines below to enable the use of Oauth2 credentials via the .env file.
     //
     // auth: {

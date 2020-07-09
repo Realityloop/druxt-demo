@@ -3,7 +3,6 @@ import Vue from 'vue'
 import DruxtBlockRegionHeader from './block-regions/DruxtBlockRegionHeader.vue'
 
 import DruxtBlockSystemBrandingBlock from './blocks/DruxtBlockSystemBrandingBlock.vue'
-import DruxtBlockSystemBreadcrumbBlock from './blocks/DruxtBlockSystemBreadcrumbBlock.vue'
 import DruxtBlockSystemMenuBlockMain from './blocks/DruxtBlockSystemMenuBlockMain.vue'
 
 import DruxtEntityBlockContentBannerBlock from './entities/DruxtEntityBlockContentBannerBlock.vue'
@@ -30,7 +29,6 @@ const components = [
   DruxtBlockRegionHeader,
 
   DruxtBlockSystemBrandingBlock,
-  DruxtBlockSystemBreadcrumbBlock,
   DruxtBlockSystemMenuBlockMain,
 
   DruxtEntityBlockContentBannerBlock,
