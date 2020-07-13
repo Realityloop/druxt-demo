@@ -42,6 +42,7 @@ export default {
     'druxt-menu',
     'druxt-router',
     'druxt-schema',
+    'druxt-search',
     'druxt-views'
   ],
 
@@ -58,6 +59,9 @@ export default {
     breadcrumb: {
       component: 'b-breadcrumb',
       home: false
+    },
+    menu: {
+      jsonApiMenuItems: true
     }
     // Uncomment the lines below to enable the use of Oauth2 credentials via the .env file.
     //

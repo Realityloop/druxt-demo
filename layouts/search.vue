@@ -10,32 +10,19 @@
         <b-navbar-toggle target="nav-collapse" />
 
         <b-collapse class="ml-auto" id="nav-collapse" is-nav>
-          <!-- Search -->
-          <druxt-block uuid="6c894dd3-0c17-40d8-b7e7-9d6bf88bf643" />
-
           <!-- Main menu -->
           <druxt-block uuid="47bdbf64-f408-4550-a09f-6dfabc0b970d" />
         </b-collapse>
       </b-container>
     </b-navbar>
 
-    <!-- Banner: Top -->
-    <druxt-block-region name="banner_top" :theme="theme" />
-
     <!-- Content -->
     <b-row class="bg-light">
       <b-container :class="containerClass">
-        <!-- Breadcrumb -->
-        <b-row v-if="!isHomePath">
-          <b-col>
-            <druxt-block-region name="breadcrumbs" :theme="theme" />
-          </b-col>
-        </b-row>
-
         <!-- Page title -->
-        <b-row v-if="!isHomePath">
+        <b-row>
           <b-col class="mb-3 mb-md-5">
-            <druxt-block-region name="page_title" :theme="theme" />
+            <h1>Search</h1>
           </b-col>
         </b-row>
 
@@ -75,14 +62,10 @@
 
 <script>
 export default {
-  name: 'Druxt',
+  name: 'DruxtSearchLayout',
 
   computed: {
     containerClass: () => ['mb-3', 'mt-3', 'mb-md-5', 'mt-md-5'],
-
-    isHomePath() {
-      return !!this.$store.state.druxtRouter.route.isHomePath
-    },
 
     theme: () => 'umami',
   },

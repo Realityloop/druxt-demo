@@ -2,7 +2,9 @@ import Vue from 'vue'
 
 import DruxtBlockRegionHeader from './block-regions/DruxtBlockRegionHeader.vue'
 
+import DruxtBlockSearchFormBlock from './blocks/DruxtBlockSearchFormBlock.vue'
 import DruxtBlockSystemBrandingBlock from './blocks/DruxtBlockSystemBrandingBlock.vue'
+import DruxtBlockSystemMenuBlockAccount from './blocks/DruxtBlockSystemMenuBlockAccount.vue'
 import DruxtBlockSystemMenuBlockMain from './blocks/DruxtBlockSystemMenuBlockMain.vue'
 
 import DruxtEntityBlockContentBannerBlock from './entities/DruxtEntityBlockContentBannerBlock.vue'
@@ -11,6 +13,7 @@ import DruxtEntityBlockContentFooterPromoBlock from './entities/DruxtEntityBlock
 import DruxtEntityCard from './entities/DruxtEntityCard.vue'
 import DruxtEntityCardCommon from './entities/DruxtEntityCardCommon.vue'
 import DruxtEntityNodeRecipeDefault from './entities/DruxtEntityNodeRecipeDefault.vue'
+import DruxtEntityTeaser from './entities/DruxtEntityTeaser.vue'
 
 import DruxtFieldEntityReferenceLabel from './fields/DruxtFieldEntityReferenceLabel.vue'
 import DruxtFieldLink from './fields/DruxtFieldLink.vue'
@@ -28,7 +31,9 @@ import DruxtViewRecipesPage1 from './views/DruxtViewRecipesPage1.vue'
 const components = [
   DruxtBlockRegionHeader,
 
+  DruxtBlockSearchFormBlock,
   DruxtBlockSystemBrandingBlock,
+  DruxtBlockSystemMenuBlockAccount,
   DruxtBlockSystemMenuBlockMain,
 
   DruxtEntityBlockContentBannerBlock,
@@ -37,6 +42,7 @@ const components = [
   DruxtEntityCard,
   DruxtEntityCardCommon,
   DruxtEntityNodeRecipeDefault,
+  DruxtEntityTeaser,
 
   DruxtFieldEntityReferenceLabel,
   DruxtFieldLink,
