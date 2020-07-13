@@ -12,6 +12,7 @@ import DruxtEntityBlockContentDisclaimerBlock from './entities/DruxtEntityBlockC
 import DruxtEntityBlockContentFooterPromoBlock from './entities/DruxtEntityBlockContentFooterPromoBlock.vue'
 import DruxtEntityCard from './entities/DruxtEntityCard.vue'
 import DruxtEntityCardCommon from './entities/DruxtEntityCardCommon.vue'
+import DruxtEntityNodeArticleDefault from './entities/DruxtEntityNodeArticleDefault.vue'
 import DruxtEntityNodeRecipeDefault from './entities/DruxtEntityNodeRecipeDefault.vue'
 import DruxtEntityTeaser from './entities/DruxtEntityTeaser.vue'
 
@@ -41,6 +42,7 @@ const components = [
   DruxtEntityBlockContentFooterPromoBlock,
   DruxtEntityCard,
   DruxtEntityCardCommon,
+  DruxtEntityNodeArticleDefault,
   DruxtEntityNodeRecipeDefault,
   DruxtEntityTeaser,
 
