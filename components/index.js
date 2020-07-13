@@ -19,9 +19,13 @@ import DruxtEntityTeaser from './entities/DruxtEntityTeaser.vue'
 import DruxtFieldEntityReferenceLabel from './fields/DruxtFieldEntityReferenceLabel.vue'
 import DruxtFieldLink from './fields/DruxtFieldLink.vue'
 import DruxtFieldListDefaultFieldDifficulty from './fields/DruxtFieldListDefaultFieldDifficulty.vue'
+import DruxtFieldNumberIntegerFieldCookingTime from './fields/DruxtFieldNumberIntegerFieldCookingTime.vue'
+import DruxtFieldNumberIntegerFieldNumberOfServings from './fields/DruxtFieldNumberIntegerFieldNumberOfServings.vue'
+import DruxtFieldNumberIntegerFieldPreparationTime from './fields/DruxtFieldNumberIntegerFieldPreparationTime.vue'
 import DruxtFieldResponsiveImage from './fields/DruxtFieldResponsiveImage.vue'
 import DruxtFieldResponsiveImageFieldMediaImage from './fields/DruxtFieldResponsiveImageFieldMediaImage.vue'
 import DruxtFieldStringFieldIngredients from './fields/DruxtFieldStringFieldIngredients.vue'
+import DruxtFieldTextDefaultFieldRecipeInstruction from './fields/DruxtFieldTextDefaultFieldRecipeInstruction.vue'
 
 import DruxtViewFeaturedArticlesPage1 from './views/DruxtViewFeaturedArticlesPage1.vue'
 import DruxtViewFrontpagePage1 from './views/DruxtViewFrontpagePage1.vue'
@@ -49,9 +53,13 @@ const components = [
   DruxtFieldEntityReferenceLabel,
   DruxtFieldLink,
   DruxtFieldListDefaultFieldDifficulty,
+  DruxtFieldNumberIntegerFieldCookingTime,
+  DruxtFieldNumberIntegerFieldNumberOfServings,
+  DruxtFieldNumberIntegerFieldPreparationTime,
   DruxtFieldResponsiveImage,
   DruxtFieldResponsiveImageFieldMediaImage,
   DruxtFieldStringFieldIngredients,
+  DruxtFieldTextDefaultFieldRecipeInstruction,
 
   DruxtViewFeaturedArticlesPage1,
   DruxtViewFrontpagePage1,
