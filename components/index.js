@@ -1,10 +1,12 @@
 import Vue from 'vue'
 
+import DruxtBlockRegionFooter from './block-regions/DruxtBlockRegionFooter.vue'
 import DruxtBlockRegionHeader from './block-regions/DruxtBlockRegionHeader.vue'
 
 import DruxtBlockSearchFormBlock from './blocks/DruxtBlockSearchFormBlock.vue'
 import DruxtBlockSystemBrandingBlock from './blocks/DruxtBlockSystemBrandingBlock.vue'
 import DruxtBlockSystemMenuBlockAccount from './blocks/DruxtBlockSystemMenuBlockAccount.vue'
+import DruxtBlockSystemMenuBlockFooter from './blocks/DruxtBlockSystemMenuBlockFooter.vue'
 import DruxtBlockSystemMenuBlockMain from './blocks/DruxtBlockSystemMenuBlockMain.vue'
 
 import DruxtEntityBlockContentBannerBlock from './entities/DruxtEntityBlockContentBannerBlock.vue'
@@ -30,11 +32,13 @@ import DruxtViewRecipeCollectionsBlock from './views/DruxtViewRecipeCollectionsB
 import DruxtViewRecipesPage1 from './views/DruxtViewRecipesPage1.vue'
 
 const components = [
+  DruxtBlockRegionFooter,
   DruxtBlockRegionHeader,
 
   DruxtBlockSearchFormBlock,
   DruxtBlockSystemBrandingBlock,
   DruxtBlockSystemMenuBlockAccount,
+  DruxtBlockSystemMenuBlockFooter,
   DruxtBlockSystemMenuBlockMain,
 
   DruxtEntityBlockContentBannerBlock,
