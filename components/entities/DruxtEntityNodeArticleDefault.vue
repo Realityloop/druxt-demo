@@ -27,9 +27,9 @@
         </b-row>
       </b-col>
 
-      <b-col md="4">
+      <!-- <b-col md="4">
         <druxt-block-region name="sidebar" :theme="theme" />
-      </b-col>
+      </b-col> -->
     </b-row>
   </article>
 </template>
