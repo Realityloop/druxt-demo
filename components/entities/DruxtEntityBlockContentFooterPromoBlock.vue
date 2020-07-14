@@ -1,6 +1,6 @@
 <template>
   <b-row>
-    <b-col cols="8" md="4">
+    <b-col class="m-auto" cols="8" md="4">
       <slot name="field_media_image" />
     </b-col>
 
