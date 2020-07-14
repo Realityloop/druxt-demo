@@ -60,9 +60,9 @@ export default {
       component: 'b-breadcrumb',
       home: false
     },
-    menu: {
-      jsonApiMenuItems: true
-    }
+    // menu: {
+    //   jsonApiMenuItems: true
+    // }
     // Uncomment the lines below to enable the use of Oauth2 credentials via the .env file.
     //
     // auth: {
