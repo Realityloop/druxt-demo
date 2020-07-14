@@ -27,6 +27,7 @@
     "druxt-search": "^0.1.0",
     "druxt-views": "^0.3.0",
     "get-port-please": "^1.0.0",
+    "matomo-tracker": "^2.2.2",
     "nuxt": "^2.13.3",
     "patch-package": "^6.2.2",
     "vuex": "^3.5.1"
