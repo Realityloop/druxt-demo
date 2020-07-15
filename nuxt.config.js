@@ -43,11 +43,12 @@ export default {
     'druxt-router',
     'druxt-schema',
     'druxt-search',
+    'druxt-theme-umami-bootstrap',
     'druxt-views'
   ],
 
   /**
-   * Druxt; DRUpal <-> nuXT.
+   * Druxt.js
    */
   druxt: {
     baseUrl: process.env.API_URL,
