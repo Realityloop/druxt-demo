@@ -46,11 +46,6 @@ export default {
     'druxt-views'
   ],
 
-  /*
-  ** Plugins
-   */
-  plugins: ['~/components'],
-
   /**
    * Druxt; DRUpal <-> nuXT.
    */
