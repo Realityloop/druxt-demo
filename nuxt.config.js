@@ -25,26 +25,27 @@ export default {
     '@nuxtjs/eslint-module',
   ],
 
-  /*
-   ** Nuxt.js modules
+  /**
+   * Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/pwa',
-    // Doc: https://github.com/nuxt-community/dotenv-module
+    // @nuxtjs/dotenv: https://github.com/nuxt-community/dotenv-module
     '@nuxtjs/dotenv',
-    // @nuxtjs/proxy module.
-    // https://github.com/nuxt-community/proxy-module
+
+    // @nuxtjs/proxy: https://github.com/nuxt-community/proxy-module
     '@nuxtjs/proxy',
+
+    // @nuxtjs/pwa: https://github.com/nuxt-community/pwa-module
+    '@nuxtjs/pwa',
+
+    // BootstrapVue: https://bootstrap-vue.org
     'bootstrap-vue/nuxt',
-    'druxt-blocks',
-    'druxt-breadcrumb',
-    'druxt-entity',
-    'druxt-menu',
-    'druxt-router',
-    'druxt-schema',
-    'druxt-search',
-    'druxt-theme-umami-bootstrap',
-    'druxt-views'
+
+    // Druxt.js: https://github.com/druxt/druxt.js
+    'druxt',
+
+    // Druxt.js theme - Umami bootstrap: https://github.com/Realityloop/druxt-theme-umami-bootstrap.js
+    'druxt-theme-umami-bootstrap'
   ],
 
   /**
