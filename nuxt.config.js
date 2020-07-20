@@ -23,6 +23,12 @@ export default {
   buildModules: [
     // Doc: https://github.com/nuxt-community/eslint-module
     '@nuxtjs/eslint-module',
+
+    // Druxt.js
+    'druxt',
+
+    // Druxt.js theme - Umami bootstrap: https://github.com/Realityloop/druxt-theme-umami-bootstrap.js
+    'druxt-theme-umami-bootstrap'
   ],
 
   /**
@@ -37,15 +43,6 @@ export default {
 
     // @nuxtjs/pwa: https://github.com/nuxt-community/pwa-module
     '@nuxtjs/pwa',
-
-    // BootstrapVue: https://bootstrap-vue.org
-    'bootstrap-vue/nuxt',
-
-    // Druxt.js: https://github.com/druxt/druxt.js
-    'druxt',
-
-    // Druxt.js theme - Umami bootstrap: https://github.com/Realityloop/druxt-theme-umami-bootstrap.js
-    'druxt-theme-umami-bootstrap'
   ],
 
   /**
