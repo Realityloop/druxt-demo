@@ -1,0 +1,1 @@
+{"version":3,"file":"druxt-router.js","sources":["webpack:///./.nuxt/components/druxt-router.js"],"sourcesContent":["import { DruxtRouterComponent } from 'druxt-router'\n\nexport default DruxtRouterComponent\n"],"mappings":";;;;;;;AAAA;AAAA;AAAA;AAAA;AAEA;;;;A","sourceRoot":""}

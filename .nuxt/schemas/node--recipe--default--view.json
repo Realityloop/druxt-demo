@@ -1,0 +1,262 @@
+{
+ "id": "node--recipe--default--view",
+ "resourceType": "node--recipe",
+ "fields": [
+  {
+   "id": "field_summary",
+   "description": "Provide a short overview of this recipe.",
+   "label": {
+    "text": "Summary",
+    "position": "hidden"
+   },
+   "required": true,
+   "type": "text_default",
+   "weight": 0,
+   "settings": {
+    "config": [],
+    "display": []
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "field_recipe_category",
+   "description": "",
+   "label": {
+    "text": "Recipe category",
+    "position": "above"
+   },
+   "required": false,
+   "type": "entity_reference_label",
+   "weight": 1,
+   "settings": {
+    "config": {
+     "handler": "default:taxonomy_term",
+     "handler_settings": {
+      "target_bundles": {
+       "recipe_category": "recipe_category"
+      },
+      "sort": {
+       "field": "name",
+       "direction": "asc"
+      },
+      "auto_create": false,
+      "auto_create_bundle": ""
+     }
+    },
+    "display": {
+     "link": false
+    }
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "field_tags",
+   "description": "Enter a comma-separated list. For example: Vegetarian, Chocolate brownies, Appetizers",
+   "label": {
+    "text": "Tags",
+    "position": "above"
+   },
+   "required": false,
+   "type": "entity_reference_label",
+   "weight": 2,
+   "settings": {
+    "config": {
+     "handler": "default:taxonomy_term",
+     "handler_settings": {
+      "target_bundles": {
+       "tags": "tags"
+      },
+      "sort": {
+       "field": "name",
+       "direction": "asc"
+      },
+      "auto_create": true,
+      "auto_create_bundle": ""
+     }
+    },
+    "display": {
+     "link": false
+    }
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "field_media_image",
+   "description": "",
+   "label": {
+    "text": "Media Image",
+    "position": "hidden"
+   },
+   "required": true,
+   "type": "entity_reference_entity_view",
+   "weight": 4,
+   "settings": {
+    "config": {
+     "handler": "default:media",
+     "handler_settings": {
+      "target_bundles": {
+       "image": "image"
+      },
+      "sort": {
+       "field": "_none"
+      },
+      "auto_create": true,
+      "auto_create_bundle": ""
+     }
+    },
+    "display": {
+     "view_mode": "responsive_3x2",
+     "link": false
+    }
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "field_preparation_time",
+   "description": "",
+   "label": {
+    "text": "Preparation time",
+    "position": "above"
+   },
+   "required": true,
+   "type": "number_integer",
+   "weight": 5,
+   "settings": {
+    "config": {
+     "min": 0,
+     "max": null,
+     "prefix": "",
+     "suffix": " minutes"
+    },
+    "display": {
+     "thousand_separator": "",
+     "prefix_suffix": true
+    }
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "field_cooking_time",
+   "description": "",
+   "label": {
+    "text": "Cooking time",
+    "position": "above"
+   },
+   "required": false,
+   "type": "number_integer",
+   "weight": 6,
+   "settings": {
+    "config": {
+     "min": 0,
+     "max": null,
+     "prefix": "",
+     "suffix": " minutes"
+    },
+    "display": {
+     "thousand_separator": "",
+     "prefix_suffix": true
+    }
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "field_number_of_servings",
+   "description": "",
+   "label": {
+    "text": "Number of servings",
+    "position": "above"
+   },
+   "required": true,
+   "type": "number_integer",
+   "weight": 7,
+   "settings": {
+    "config": {
+     "min": 0,
+     "max": null,
+     "prefix": "",
+     "suffix": ""
+    },
+    "display": {
+     "thousand_separator": "",
+     "prefix_suffix": true
+    }
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "field_difficulty",
+   "description": "",
+   "label": {
+    "text": "Difficulty",
+    "position": "above"
+   },
+   "required": true,
+   "type": "list_default",
+   "weight": 8,
+   "settings": {
+    "config": [],
+    "display": []
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "field_ingredients",
+   "description": "List the ingredients required for this recipe, one per item.",
+   "label": {
+    "text": "Ingredients",
+    "position": "above"
+   },
+   "required": false,
+   "type": "string",
+   "weight": 9,
+   "settings": {
+    "config": [],
+    "display": {
+     "link_to_entity": false
+    }
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "field_recipe_instruction",
+   "description": "",
+   "label": {
+    "text": "Recipe instruction",
+    "position": "above"
+   },
+   "required": true,
+   "type": "text_default",
+   "weight": 10,
+   "settings": {
+    "config": [],
+    "display": []
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "links",
+   "description": null,
+   "label": {
+    "text": null,
+    "position": null
+   },
+   "required": false,
+   "type": null,
+   "weight": 11,
+   "settings": {
+    "config": {},
+    "display": []
+   },
+   "thirdPartySettings": []
+  }
+ ],
+ "groups": [],
+ "config": {
+  "entityType": "node",
+  "bundle": "recipe",
+  "mode": "default",
+  "schemaType": "view",
+  "filter": [],
+  "href": "https://dev-druxt.pantheonsite.io/en/jsonapi/node/recipe"
+ }
+}

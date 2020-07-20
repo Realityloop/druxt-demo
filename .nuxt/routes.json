@@ -1,0 +1,16 @@
+[
+  {
+    "name": "langcode-search",
+    "path": "/:langcode?/search",
+    "component": "/Users/stuartclark/Projects/Druxt/druxt-dev/druxt-demo/pages/_langcode/search.vue",
+    "chunkName": "pages/_langcode/search",
+    "_name": "_1611e1aa"
+  },
+  {
+    "name": "druxt-router",
+    "path": "*",
+    "component": "/Users/stuartclark/Projects/Druxt/druxt-dev/druxt-demo/.nuxt/components/druxt-router.js",
+    "chunkName": "druxt-router",
+    "_name": "_2c7334d3"
+  }
+]

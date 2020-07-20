@@ -1,0 +1,205 @@
+{
+ "id": "media--image--default--form",
+ "resourceType": "media--image",
+ "fields": [
+  {
+   "id": "name",
+   "description": null,
+   "label": {
+    "text": null,
+    "position": null
+   },
+   "cardinality": null,
+   "required": false,
+   "type": "string_textfield",
+   "weight": 0,
+   "settings": {
+    "config": {},
+    "display": {
+     "size": 60,
+     "placeholder": ""
+    },
+    "storage": {}
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "field_media_image",
+   "description": "",
+   "label": {
+    "text": "Image",
+    "position": null
+   },
+   "cardinality": 1,
+   "required": true,
+   "type": "image_image",
+   "weight": 1,
+   "settings": {
+    "config": {
+     "alt_field": true,
+     "alt_field_required": true,
+     "title_field": false,
+     "title_field_required": false,
+     "max_resolution": "",
+     "min_resolution": "",
+     "default_image": {
+      "uuid": null,
+      "alt": "",
+      "title": "",
+      "width": null,
+      "height": null
+     },
+     "file_directory": "[date:custom:Y]-[date:custom:m]",
+     "file_extensions": "png gif jpg jpeg",
+     "max_filesize": "",
+     "handler": "default:file",
+     "handler_settings": []
+    },
+    "display": {
+     "progress_indicator": "throbber",
+     "preview_image_style": "thumbnail"
+    },
+    "storage": {
+     "default_image": {
+      "uuid": null,
+      "alt": "",
+      "title": "",
+      "width": null,
+      "height": null
+     },
+     "target_type": "file",
+     "display_field": false,
+     "display_default": false,
+     "uri_scheme": "public"
+    }
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "langcode",
+   "description": null,
+   "label": {
+    "text": null,
+    "position": null
+   },
+   "cardinality": null,
+   "required": false,
+   "type": "language_select",
+   "weight": 2,
+   "settings": {
+    "config": {},
+    "display": {
+     "include_locked": true
+    },
+    "storage": {}
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "path",
+   "description": null,
+   "label": {
+    "text": null,
+    "position": null
+   },
+   "cardinality": null,
+   "required": false,
+   "type": "path",
+   "weight": 3,
+   "settings": {
+    "config": {},
+    "display": [],
+    "storage": {}
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "uid",
+   "description": null,
+   "label": {
+    "text": null,
+    "position": null
+   },
+   "cardinality": null,
+   "required": false,
+   "type": "entity_reference_autocomplete",
+   "weight": 4,
+   "settings": {
+    "config": {},
+    "display": {
+     "match_operator": "CONTAINS",
+     "match_limit": 10,
+     "size": 60,
+     "placeholder": ""
+    },
+    "storage": {}
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "created",
+   "description": null,
+   "label": {
+    "text": null,
+    "position": null
+   },
+   "cardinality": null,
+   "required": false,
+   "type": "datetime_timestamp",
+   "weight": 5,
+   "settings": {
+    "config": {},
+    "display": [],
+    "storage": {}
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "translation",
+   "description": null,
+   "label": {
+    "text": null,
+    "position": null
+   },
+   "cardinality": null,
+   "required": false,
+   "type": null,
+   "weight": 6,
+   "settings": {
+    "config": {},
+    "display": [],
+    "storage": {}
+   },
+   "thirdPartySettings": []
+  },
+  {
+   "id": "status",
+   "description": null,
+   "label": {
+    "text": null,
+    "position": null
+   },
+   "cardinality": null,
+   "required": false,
+   "type": "boolean_checkbox",
+   "weight": 7,
+   "settings": {
+    "config": {},
+    "display": {
+     "display_label": true
+    },
+    "storage": {}
+   },
+   "thirdPartySettings": []
+  }
+ ],
+ "groups": [],
+ "config": {
+  "entityType": "media",
+  "bundle": "image",
+  "mode": "default",
+  "schemaType": "form",
+  "filter": [],
+  "href": "https://dev-druxt.pantheonsite.io/en/jsonapi/media/image"
+ }
+}
