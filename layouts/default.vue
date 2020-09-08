@@ -2,21 +2,7 @@
   <b-container fluid>
     <!-- Header -->
     <b-navbar class="bg-white p-3" toggleable="lg" sticky>
-      <!-- <druxt-block-region name="header" :theme="theme" /> -->
-      <b-container>
-        <!-- Branding -->
-        <druxt-block uuid="6e9051e1-57a6-4432-bad0-30665207ae93" />
-
-        <b-navbar-toggle target="nav-collapse" />
-
-        <b-collapse class="ml-auto" id="nav-collapse" is-nav>
-          <!-- Search -->
-          <druxt-block uuid="aab90ed3-bb13-4945-9231-3e68dffe4ec3" />
-
-          <!-- Main menu -->
-          <druxt-block uuid="8d5d7b1b-89f9-4804-a594-bbe0015e601b" />
-        </b-collapse>
-      </b-container>
+      <druxt-block-region name="header" :theme="theme" />
     </b-navbar>
 
     <!-- Banner: Top -->
