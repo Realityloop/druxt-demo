@@ -1,7 +1,7 @@
 exports.ids = [2];
 exports.modules = {
 
-/***/ 87:
+/***/ 86:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -23,7 +23,7 @@ var staticRenderFns = []
 // CONCATENATED MODULE: ./pages/_langcode/search.vue?vue&type=template&id=5ffda246&
 
 // EXTERNAL MODULE: external "druxt-search"
-var external_druxt_search_ = __webpack_require__(11);
+var external_druxt_search_ = __webpack_require__(12);
 
 // CONCATENATED MODULE: ./node_modules/babel-loader/lib??ref--2-0!./node_modules/vue-loader/lib??vue-loader-options!./pages/_langcode/search.vue?vue&type=script&lang=js&
 //

@@ -17,6 +17,8 @@ export default (context, inject) => {
   const baseUrl = 'https://dev-druxt.pantheonsite.io'
   const options = {}
 
+  options.menu = {"jsonApiMenuItems":true}
+
   const druxtMenu = new DruxtMenu(baseUrl, options)
   inject('druxtMenu', druxtMenu)
 }
