@@ -4,7 +4,9 @@ This is a DruxtJS demonstration.
 
 The following is a script to be used when presenting this demonstration.
 
-This script is written for a complete blank slate, some of this steps should be
+```
+git clone --single-branch --branch feature/20-presentation git@github.com:Realityloop/druxt-demo.git
+```
 
 ---
 
@@ -13,6 +15,7 @@ This script is written for a complete blank slate, some of this steps should be
 - Composer
 - NPM
 - Tokaido*
+
 
 ### Composer memory limit issue
 
