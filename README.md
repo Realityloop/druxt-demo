@@ -4,6 +4,8 @@ This is a DruxtJS demonstration.
 
 The following is a script to be used when presenting this demonstration.
 
+**Important: Run the demo in an adjacent directory to avoid environment issue!**
+
 ```
 git clone --single-branch --branch feature/20-presentation git@github.com:Realityloop/druxt-demo.git
 ```
