@@ -1,38 +1,20 @@
 {
   "name": "druxt-demo",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Druxt demo site",
-  "author": "Stuart Clark",
+  "author": "Stuart Clark <stuart@realityloop.com>",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "postinstall": "patch-package"
+    "generate": "nuxt generate"
   },
   "dependencies": {
-    "@nuxtjs/dotenv": "^1.4.1",
     "@nuxtjs/proxy": "^1.3.3",
-    "@nuxtjs/pwa": "^3.0.2",
-    "axios": "^0.19.2",
-    "bootstrap-vue": "^2.16.0",
     "druxt": "^0.2.0",
     "druxt-theme-umami-bootstrap": "^0.2.0",
-    "get-port-please": "^1.0.0",
-    "nuxt": "^2.14.4",
-    "vuex": "^3.5.1"
+    "nuxt": "^2.14.4"
   },
-  "devDependencies": {
-    "@nuxtjs/eslint-config": "^2.0.2",
-    "@nuxtjs/eslint-module": "^1.2.0",
-    "babel-eslint": "^10.1.0",
-    "eslint": "^6.8.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-plugin-nuxt": "^0.5.2",
-    "eslint-plugin-prettier": "^3.1.4",
-    "patch-package": "^6.2.2",
-    "prettier": "^2.1.1"
-  }
+  "devDependencies": {}
 }
