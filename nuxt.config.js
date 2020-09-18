@@ -1,10 +1,12 @@
-const baseUrl = 'https://dev-druxt.pantheonsite.io/'
+import components from './components'
+
+const baseUrl = 'http://dev-druxt.pantheonsite.io/'
 
 export default {
   modules: [
     '@nuxtjs/proxy',
-    'druxt',
-    'druxt-theme-umami-bootstrap'
+    'bootstrap-vue/nuxt',
+    'druxt'
   ],
   druxt: {
     baseUrl,
@@ -14,6 +16,7 @@ export default {
     },
     menu: { jsonApiMenuItems: true }
   },
+  components,
   proxy: {
     '/sites/default/files': baseUrl
   }
